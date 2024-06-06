@@ -3,12 +3,14 @@ export class CreatUser{
     name:string
     email:string
     rollno:string
+    certificate:string[]
 }
 
 export class UpdateUser{
     name?:string
     email?:string
     rollno?:string
+    certificate:string[]
 }
 
 
@@ -33,6 +35,9 @@ export class UserDb{
 
     @Column()
     rollno:string
+
+    @Column()
+    certificate:string[]
 
     @CreateDateColumn()
     createdAt:Date
