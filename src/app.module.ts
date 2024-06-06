@@ -15,7 +15,7 @@ import { DocumentController } from './document/document.controller';
     TypeOrmModule.forRoot(
       {
         type: 'mongodb',
-        url: 'mongodb://localhost:27017',
+        url: 'mongodb://admin:demo123@3.110.87.133:27017/?authSource=admin&authMechanism=SCRAM-SHA-1',
         database: 'test',
         entities: [UserDb,DocumentDb],
       }
