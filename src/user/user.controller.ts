@@ -13,7 +13,8 @@ import { CreatUser, UpdateUser, UserDb } from 'src/dto/user.dto';
 // import { User } from 'src/dto/user.dto';
 
 @Controller('user')
-export class UserController {
+export class 
+UserController {
   constructor(private readonly userService: UserService) {}
 
   @Post()

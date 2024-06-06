@@ -12,9 +12,10 @@ export class UserService {
     private readonly userDb: Repository<UserDb>,
   ) {}
 
-  create(createUserDto: CreatUser): Promise<UserDb> {
+  create(createUserDto: CreatUser): Promise<string> {
     let user = this.userDb.create(createUserDto);
-    return this.userDb.save(user);
+    this.userDb.save(user);
+    return 
   }
 
   findAll(): Promise<UserDb[]> {
